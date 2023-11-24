@@ -9,7 +9,7 @@ const BudgetApp = () => {
   const [expenseName, setExpenseName] = useState("");
   const [expenseAmount, setExpenseAmount] = useState("");
   const [budgetArray, setBudgetArray] = useState(
-    JSON.parse(localStorage.getItem("allBudgets"))
+    JSON.parse(localStorage.getItem("allBudgets")) ?? []
   );
   const [totalExpense, setTotalExpense] = useState(0);
   const [totalBudget, setTotalBudget] = useState(0);
